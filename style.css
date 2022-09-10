@@ -1,0 +1,162 @@
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #f5f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  margin: 60px auto;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin: 0;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 96px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+about-paragraphs p {
+  background: var(--secondary-color);
+  padding: 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.navigator {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 0;
+  line-height: 0.3;
+}
+
+.nav-item {
+  line-height: 0.3;
+  padding: 0;
+}
+
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+a {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+}
+
+.contact-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.about-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
+
+.lauch {
+  margin-top: 40px;
+  margin-left: 0;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+  text-transform: capitalize;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+}
+
+.about-paragraphs p {
+  text-align: center;
+  font-size: 20px;
+  margin: 30px;
+}
+
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+  margin-top: 0;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.app-paragraph {
+  background-color: white;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.yoga-app {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-top: 40px;
+}
+
+.yoga-img {
+  flex: 45%;
+}
+
+.yoga-text {
+  padding-left: 22px;
+  padding-right: 12px;
+  flex: 55%;
+}
+.yoga-text h2 {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+@media (max-width: 780px) {
+  .yoga-text,
+  .yoga-img {
+    flex: 100%;
+  }
+
+  .yoga-text {
+    order: -1;
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+
+  .yoga-app {
+    margin: 12px;
+  }
+}
+
+nav {
+  z-index: 9999;
+}
